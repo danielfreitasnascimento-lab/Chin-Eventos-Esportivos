@@ -1,0 +1,112 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# MacOS
+.DS_Store
+
+# Docker
+.dockerignore
+
+
+# Chin Eventos Esportivos 🏆⚽
+
+**E-commerce de Produtos Esportivos + Sistema de Gestão de Campeonatos**
+
+## Sobre
+
+Plataforma integrada para:
+- 🛍️ Venda de produtos esportivos (bolas, chuteiras, acessórios de goleiro, etc)
+- ⚽ Organização de campeonatos de futebol
+- 📅 Gestão de escalas de arbitragem
+- 👥 Cadastro e gerenciamento de atletas
+- 💳 Pagamentos via PIX
+
+**Localização:** Marigá  
+**Responsável:** Centauro (Vendedor)
+
+## Tecnologias
+
+### Frontend
+- React.js
+- Redux (State Management)
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js + Express
+- MongoDB
+- JWT Authentication
+- PIX Integration
+
+### Infraestrutura
+- Docker
+- Docker Compose
+- MongoDB Container
+
+## Estrutura do Projeto
+
+
+cd backend
+npm install
+cp .env.example .env
+npm start
+
+cd frontend
+npm install
+npm start
+
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/chin-eventos
+JWT_SECRET=sua_chave_secreta_aqui
+PIX_KEY=sua_chave_pix
+EMAIL_USER=seu_email@gmail.com
+EMAIL_PASSWORD=sua_senha_app
+NODE_ENV=development
+
+REACT_APP_API_URL=http://localhost:5000/api
+
+REACT_APP_API_URL=http://localhost:5000/api
